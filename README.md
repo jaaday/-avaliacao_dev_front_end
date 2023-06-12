@@ -4,6 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+O projeto foi realizado utilizando a IDE do Visual Studio Code. Utilizar mesma ferramenta.
+
 Após realizar o clone do projeto, abrir o mesmo pelo terminal e executar o comando para instalação do node:
 - npm install
 
