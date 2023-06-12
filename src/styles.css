@@ -1,0 +1,316 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'Kredit';
+    src: url('/assets/fonts/kredit front.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+    background:#01EE55;
+    background: -webkit-linear-gradient(to left, #fff, #fff 20%, #fff 50%, #01EE55 50%);
+    background: -o-linear-gradient(to left, #fff, #fff 20%, #fff 50%, #01EE55 50%);
+    background: -moz-linear-gradient(to left, #fff, #fff 20%, #fff 50%, #01EE55 50%);
+    background: linear-gradient(to left, #fff, #fff 20%, #fff 50%, #01EE55 50%);
+    height: -webkit-fill-available;
+    height: 100%;
+}
+
+.campos-checkout{
+    display: flex;
+    flex-direction: column;
+}
+
+.campos-menores-checkout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.campos-menores2-checkout{
+    display: flex;
+    flex-direction: row;
+}
+
+.linha-checkout{
+    flex: 100%;
+}
+
+.linha-m-checkout{
+    width: 200px;
+}
+
+.linha-m2-checkout{
+    flex: 50%;
+}
+
+.linha-f-checkout{
+    flex: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.linha-f-checkout a{
+    text-decoration: none;
+    color: #01EE55;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+}
+
+
+.titulo-campo{
+    color: #C6C6C6;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.titulo-link{
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+.titulo-link a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+}
+
+.input-campo, .input-campo-success, .input-campo-error{
+    border: none;
+    outline:none;
+    height: 30px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.input-campo{
+    border-bottom: 1px solid #F9F9F9;
+}
+
+.input-campo-success{
+    border-bottom: 1px solid #01ee55;
+}
+
+.input-campo-error{
+    border-bottom: 1px solid #fc1241;
+}
+
+.input-campo:focus, .input-campo:active, .input-campo:target, .input-campo-success:focus, .input-campo-success:active, .input-campo-success:target, .input-campo-error:focus, .input-campo-error:active, .input-campo-error:target{
+    border: none;
+    border-bottom: 1px solid #F9F9F9;
+    outline:none;
+}
+
+#msg-num-card{
+    font-size: 11px;
+    min-height: 30px;
+    color: #fc1241;
+}
+
+.container-body{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+    height: inherit;
+}
+
+.alterar-pg-lk-m{
+    display: none;
+}
+
+.fluxo-pagamento{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.container-left{
+    padding: 30px;
+    flex: 30%;
+    background: -webkit-linear-gradient(to left, #FFFEFE, #FFFEFE 20%, #FFFEFE 35%, #01EE55 10%);
+    background: -o-linear-gradient(to left, #FFFEFE, #FFFEFE 20%, #FFFEFE 35%, #01EE55 10%);
+    background: -moz-linear-gradient(to left, #FFFEFE, #FFFEFE 20%, #FFFEFE 35%, #01EE55 10%);
+    background: linear-gradient(to left, #FFFEFE, #FFFEFE 20%, #FFFEFE 35%, #01EE55 10%);
+}
+
+.container-right{
+    background-color: #FFFEFE;
+    padding: 30px;
+    padding-left: 80px;
+    flex: 70%;
+}
+
+.container-card{
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+    width: 300px;
+    border-radius: 10px;
+    background-image: radial-gradient(#666363 5%, #413e3e 90%);
+    padding: 15px;
+    box-shadow: 5px 5px 8px #39343438;
+}
+
+.img-card img{
+    width: 70px;
+}
+
+.img-card{
+    text-align: right;
+}
+
+.titulo-card-n {
+    min-height: 38px;
+}
+
+.titulo-card-n label{
+    font-family: 'Kredit', Times, serif;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.titulo-card-m {
+    min-height: 33px;
+}
+
+.titulo-card-m label{
+    font-family: 'Kredit', Times, serif;
+    color: #c1c1c1;
+    font-size: 18px;
+}
+
+.titulo-card-l{
+    font-family: 'Kredit', Times, serif;
+    color: #fbfbfb;
+    font-size: 18px;
+}
+
+.titulo-card-o{
+    font-family: 'Kredit', Times, serif;
+    color: #c3c3c3;
+    font-size: 14px;
+}
+
+.campos-pagar{
+    text-align: right;
+    margin-top: 50px;
+}
+
+.btn-pagar{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background: #01EE55;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-size: 16px;
+    width: 150px;
+}
+
+.icones-b{
+    color: #fff;
+    margin-right: 10px;
+}
+
+.icones-v{
+    color: #01EE55;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.icones-v2{
+    color: #01EE55;
+    border: 1px solid #01EE55;
+    background: #ff000000;
+    font-size: 15px;
+    margin-right: 10px;
+    border-radius: 50%;
+    padding: 5px 11px;
+}
+
+input:-internal-autofill-selected{
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgba(255, 255, 255, 0.4)) !important;
+}
+
+@media (max-width: 1000px) {
+    .container{
+        background: #FFFEFE;
+    }
+
+    .container-left{
+        padding: 10px;
+        background: -webkit-linear-gradient(to top, #FFFEFE 20%, #01EE55 20%);
+        background: -o-linear-gradient(to top, #FFFEFE 20%, #01EE55 20%);
+        background: -moz-linear-gradient(to top, #FFFEFE 20%, #01EE55 20%);
+        background: linear-gradient(to top, #FFFEFE 20%, #01EE55 20%);
+    }
+
+    .container-body {
+        flex-direction: column;
+    }
+
+    .container-right{
+        padding: 30px;
+    }
+}
+@media (max-width: 700px) {
+
+    .campos-menores-checkout{
+        flex-direction: column;
+    }
+
+    .linha-m-checkout {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .alterar-pg-lk-m{
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 22px;
+        justify-content: center;
+    }
+
+    .alterar-pg-lk-m a{
+        font-size: 22px;
+    }
+
+    .alterar-pg-lk{
+        display: none;
+    }
+
+    .container-card{
+        width: 90%;
+        margin: auto;
+    }
+
+    .btn-pagar{
+        width: 100%;
+        margin: auto;
+    }
+
+    .campos-pagar {
+        display: flex;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .fluxo-pagamento{
+        display: none;
+    }
+
+}

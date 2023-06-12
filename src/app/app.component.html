@@ -1,0 +1,113 @@
+<app-header></app-header>
+
+<div class="container">
+    
+    <div class="container-body">
+
+        <div class="container-left">
+
+            <div class="titulo-link alterar-pg-lk">
+                <fa-icon [icon]="iconArrow" class="icones-b"></fa-icon>
+                <a href="#">Alterar forma de pagamento </a>
+            </div>
+
+            <div class="titulo-link alterar-pg-lk-m">
+              <fa-icon [icon]="iconArrow" class="icones-b"></fa-icon>
+              <a href="#">Etapa 2 de 3 </a>
+            </div>
+            
+            <div class="container-card">
+                
+                <div class="img-card">
+                    <img title="Master Card" src="{{imgBand}}"/>
+                </div>
+                <div class="titulo-card-n">
+                  <label id="card-nunmero">{{numeroCard}}</label>
+                </div>
+                <div class="titulo-card-m">
+                  <label id="card-nome">{{nomeCard}}</label>
+                </div>
+                <div class="campos-menores2-checkout">
+                  <div class="linha-m2-checkout">
+                    <label class="titulo-card-l" id="card-validade-l">VALIDADE</label><br>
+                    <label class="titulo-card-o" id="card-validade">{{validadeCard}}</label>
+                  </div>
+                  <div class="linha-m2-checkout">
+                    <label class="titulo-card-l" id="card-cv-l">CVV</label><br>
+                    <label class="titulo-card-o" id="card-cvv">{{cvvCard}}</label>
+                  </div>
+                </div>          
+            </div>
+        </div>
+
+        <div class="container-right">
+
+            <div class="fluxo-pagamento">
+                <div class="linha-f-checkout">
+                    <fa-icon [icon]="iconCheck" class="icones-v"></fa-icon>
+                    <a href="#">Carrinho</a>
+                </div>
+                <div class="linha-f-checkout">
+                    <fa-icon [icon]="icone2" class="icones-v2"></fa-icon>
+                    <a href="#">Pagamento</a>
+                </div>
+                <div class="linha-f-checkout">
+                  <fa-icon [icon]="icone3" class="icones-v2"></fa-icon>
+                    <a href="#">Pedido finalizado</a>
+                </div>
+            </div>
+
+              <div class="campos-checkout">
+
+                <div class="linha-checkout">
+                  <label class="titulo-campo" for="fnumcartao">Número do cartão</label><br>
+                  <input class="input-campo{{corBorda}}" maxlength="23" type="text" id="fnumcartao" name="fnumcartao" (keyup)="onKeyUp($event)">
+                  <div id="msg-num-card">{{msgNum}}</div>
+                </div>
+                <div class="linha-checkout">
+                  <label class="titulo-campo" for="fnome">Nome</label><br/>
+                  <input class="input-campo{{corBorda2}}" maxlength="26" type="text" id="fnome" name="fnome" (keyup)="onKeyUpNome($event)">
+                  <div id="msg-num-card">{{msgNom}}</div>
+                </div>
+
+                <div class="campos-menores-checkout">
+                    <div class="linha-m-checkout">
+                      <label class="titulo-campo" for="fvalidade">Validade (MM/AA)</label><br>
+                      <input class="input-campo{{corBorda3}}" maxlength="5" type="text" id="fvalidade" name="fvalidade" (keyup)="onKeyUpValidade($event)">
+                      <div id="msg-num-card">{{msgVal}}</div>
+                    </div>
+                    <div class="linha-m-checkout">
+                      <label class="titulo-campo" for="fcvv">CVV</label><br>
+                      <input class="input-campo{{corBorda4}}" maxlength="3" type="text" id="fcvv" name="fcvv" (keyup)="onKeyUpCvv($event)">
+                      <div id="msg-num-card">{{msgCvv}}</div>
+                    </div>
+                    <div class="linha-m-checkout">
+                      <label class="titulo-campo" for="fcpf">CPF</label><br>
+                      <input class="input-campo{{corBorda5}}" maxlength="14" type="text" id="fcpf" name="fcpf" (keyup)="onKeyUpCpf($event)">
+                      <div id="msg-num-card">{{msgCpf}}</div>
+                    </div>
+                </div>
+
+                <div class="linha-checkout">
+                  <label class="titulo-campo" for="fparcelas">Número de parcelas</label><br>
+
+                  <select title="Opções de parcelas" name="cars" id="cars" class="input-campo{{corBorda6}}" (change)="onChangeNp($event)">
+                    <option class="input-campo" value="0"> </option>
+                    <option class="input-campo" value="1">1x R$1.198,80 (à vista)</option>
+                    <option class="input-campo" value="2">2x R$637,50 (com juros)</option>
+                    <option class="input-campo" value="3">3x R$456,27 (com juros)</option>
+                  </select>
+                  <div id="msg-num-card">{{msgNpa}}</div>
+                </div>
+
+              </div>
+
+              <div class="campos-pagar">
+                <a class="btn-pagar" href="#" (click)="onClickMe()">Pagar</a>
+              </div>
+            
+        </div>
+
+    </div>
+
+</div>
