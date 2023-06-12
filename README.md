@@ -14,8 +14,8 @@ Com a compilação realizada sem erros basta acessar o endereço `http://localho
 
 ## Observações para os testes VALIDAÇÃO FAKE
 
-Para o campo de `número de cartão` use '55555 55555 55555 55555' ou '55555555555555555555';
-Para o campo de `nome completo` use 'Walter J. With' ou '55555555555555555555';
-Para o campo da `data` use '01/28';
-Para o campo do `cvv` use '123';
-Para o campo do `cpf` use '132.458.125-19' ou '13245812519';
+- Para o campo de `número de cartão` use '55555 55555 55555 55555' ou '55555555555555555555';
+- Para o campo de `nome completo` use 'Walter J. With' ou '55555555555555555555';
+- Para o campo da `data` use '01/28';
+- Para o campo do `cvv` use '123';
+- Para o campo do `cpf` use '132.458.125-19' ou '13245812519';
