@@ -4,24 +4,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Após realizar o clone do projeto, abrir o mesmo pelo terminal e executar o comando para instalação do node:
+- npm install
 
-## Code scaffolding
+Logo após a instalação, executar o comando para rodar a aplicação:
+- ng serve
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Com a compilação realizada sem erros basta acessar o endereço `http://localhost:4200/` em um dos seus navegadores. Qualquer mudança realizada no código será espelhada em tempo real para a saída.
 
-## Build
+## Observações para os testes VALIDAÇÃO FAKE
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para o campo de `número de cartão` use '55555 55555 55555 55555' ou '55555555555555555555';
+Para o campo de `nome completo` use 'Walter J. With' ou '55555555555555555555';
+Para o campo da `data` use '01/28';
+Para o campo do `cvv` use '123';
+Para o campo do `cpf` use '132.458.125-19' ou '13245812519';
